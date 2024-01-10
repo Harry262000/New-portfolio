@@ -1,0 +1,151 @@
+/* Navbar Brand */
+
+.navbar-brand {
+    font-size: xx-large;
+    /* size for brand */
+    font-weight: bold;
+}
+
+
+/* Navbar Colors */
+
+#navbar-color,
+#name-color {
+    color: #FFF;
+}
+
+#navbar-color:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+/* Navbar Styles */
+
+.navbar,
+.navbar-custom {
+    background: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* Navbar Brand in Custom Navbar */
+
+.navbar-custom .navbar-brand {
+    color: #fff;
+    /* Set the color of the navbar brand text */
+}
+
+
+/* Navbar Links in Custom Navbar */
+
+.navbar-custom .navbar-nav .nav-link {
+    color: #fff;
+    /* Set the color of the navbar links */
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #f8f9fa;
+    /* Set the color of the navbar links on hover */
+}
+
+
+/* Navbar Toggler */
+
+.navbar-toggler {
+    background-color: #FFF;
+}
+
+
+/* Apply this style to your navbar links */
+
+.navbar a {
+    text-decoration: none;
+    /* Remove underline by default */
+    font-family: monospace;
+}
+
+
+/* Apply this style when hovering over navbar links */
+
+.navbar a:hover {
+    text-decoration: none;
+    /* Remove underline on hover */
+}
+
+body {
+    background-color: #000;
+}
+
+.first-box h3 {
+    color: #fff;
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.first-box h3 {
+    border-bottom: 1.2px #fff solid;
+}
+
+.col-12 p {
+    color: #fff;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+
+.portfolio-page h2 {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 26px;
+    margin-bottom: 25px;
+    font-family: serif;
+    color: #fff;
+    border-bottom: 1.2px #c4d6e2 solid;
+}
+
+.first-box,
+footer .row {
+    background: rgb(20, 20, 20);
+    background: linear-gradient(90deg, rgba(20, 20, 20, 1) 0%, rgba(20, 20, 19, 1) 100%);
+}
+
+footer {
+    padding: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    background: rgb(20, 20, 20);
+    background: linear-gradient(90deg, rgba(20, 20, 20, 1) 0%, rgba(20, 20, 19, 1) 100%);
+}
+
+footer .row {
+    color: #fff;
+}
+
+.copyright {
+    margin-top: 30px;
+}
+
+footer .social {
+    text-align: right;
+    /* webkit-transition-duration: .5s; */
+}
+
+footer .back-to-top {
+    width: 40px;
+    height: 40px;
+    background: rgba(64, 75, 82, 0.8);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 4px;
+    line-height: 40px;
+    display: none;
+    text-align: center;
+}
