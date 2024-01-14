@@ -196,7 +196,7 @@
              color: white;
          }
          
-         .subtitle {
+         .subtitles {
              padding: 20px;
          }
          
@@ -468,6 +468,14 @@
          footer .row {
              background: rgb(20, 20, 20);
              background: linear-gradient(90deg, rgba(20, 20, 20, 1) 0%, rgba(20, 20, 19, 1) 100%);
+         }
+         
+         .subtitle {
+             padding: 20px;
+             padding-top: 20px;
+             padding-right: 20px;
+             padding-bottom: 20px;
+             padding-left: 20px;
          }
          
          footer {
