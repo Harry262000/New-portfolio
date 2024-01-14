@@ -1,97 +1,37 @@
-/* Navbar Brand */
-
 .navbar-brand {
     font-size: xx-large;
-    /* size for brand */
     font-weight: bold;
 }
 
-
-/* Navbar Colors */
-
-#navbar-color,
 #name-color {
     color: #FFF;
 }
 
-#navbar-color:hover {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-
-/* Navbar Styles */
-
-.navbar,
-.navbar-custom {
+.navbar {
     background: transparent;
 }
-
-
-/* Navbar Brand in Custom Navbar */
-
-.navbar-custom .navbar-brand {
-    color: #fff;
-    /* Set the color of the navbar brand text */
-}
-
-
-/* Navbar Links in Custom Navbar */
-
-.navbar-custom .navbar-nav .nav-link {
-    color: #fff;
-    /* Set the color of the navbar links */
-}
-
-.navbar-custom .navbar-nav .nav-link:hover {
-    color: #f8f9fa;
-    /* Set the color of the navbar links on hover */
-}
-
-
-/* Navbar Toggler */
 
 .navbar-toggler {
     background-color: #FFF;
 }
-
-
-/* Apply this style to your navbar links */
 
 .navbar a {
     text-decoration: none;
     /* Remove underline by default */
 }
 
-
-/* Apply this style when hovering over navbar links */
-
 .navbar a:hover {
     text-decoration: none;
     /* Remove underline on hover */
 }
 
-
-/* Source Class */
-
-.source {
-    font-style: italic;
-}
-
-
-/* Upper Section Index Background */
-
 .upper-section-index {
-    /* background-image: url('./img/pexels-pixabay-268533.jpg'); */
     background-size: cover;
     background-position: center;
     width: auto;
     background-color: #000;
     height: 750px;
 }
-
-
-/* Title Color Section */
 
 .title-color {
     background-size: cover;
@@ -123,16 +63,15 @@
 /* Title Description Styles */
 
 .title-description {
-    /* font-size: 15px; */
     font-weight: normal;
+}
+
+#changingword {
+    color: #ad343e;
 }
 
 
 /* Home Content Styles */
-
-.home-content {
-    margin: 40px 0 60px 0;
-}
 
 
 /* ========================service section=================================== */
@@ -187,15 +126,6 @@
     padding-left: 20px;
 }
 
-
-/* .service-box {
-         width: 200px;
-         height: 200px;
-         border-radius: 30px;
-         background: #212121;
-         box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
-     } */
-
 .service-box {
     height: 256px;
     width: 400px;
@@ -235,16 +165,6 @@
 
 /* ===========================portfolio=================================== */
 
-
-/* .portfolio {
-         background-size: cover;
-         background-position: center;
-         width: auto;
-         background-color: black;
-         height: 800px;
-         padding: 20px;
-     } */
-
 .heading {
     text-align: center;
     font-size: 30px;
@@ -277,16 +197,6 @@
     background: url(https://i.ibb.co/d7tSD1R/heading-line-white.png);
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.heading span {
-    font-size: 18px;
-    display: block;
-    font-weight: 500;
-}
-
-.white-heading span {
-    color: #ffffff;
 }
 
 .overlay-slide:hover div {
@@ -349,88 +259,6 @@
 .service-block .inner-box {
     position: relative;
     overflow: hidden;
-}
-
-.service-block .inner-box .image {
-    position: relative;
-}
-
-.service-block .inner-box .image .read-more {
-    position: absolute;
-    right: 0px;
-    bottom: 26px;
-    left: 60%;
-    color: #252525;
-    font-size: 16px;
-    opacity: 0;
-    visibility: hidden;
-    padding: 15px 25px;
-    transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -webkit-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    background-color: rgba(255, 255, 255, 0.80);
-}
-
-.service-block .inner-box:hover .image .read-more {
-    left: 40%;
-    opacity: 1;
-    visibility: visible;
-}
-
-.service-block .inner-box .image .read-more a {
-    position: relative;
-    color: #252525;
-    font-weight: 700;
-    transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -webkit-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-}
-
-.service-block .inner-box .image .read-more a .icon {
-    position: relative;
-    top: 1px;
-    margin-left: 5px;
-    font-size: 16px;
-    display: inline-block;
-}
-
-.service-block .inner-box .image .read-more a:hover {
-    color: #d7a449;
-}
-
-.service-block .inner-box .image img {
-    position: relative;
-    width: 100%;
-    display: block;
-}
-
-.service-block .inner-box .lower-content {
-    position: relative;
-    padding-top: 30px;
-    margin-bottom: 40px;
-}
-
-.service-block .inner-box .lower-content h3 {
-    position: relative;
-    color: #ffffff;
-    font-size: 17px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-
-.service-block .inner-box .lower-content h3 a {
-    position: relative;
-    color: #ffffff;
-    transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -webkit-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
 }
 
 .portfolio-section .btn {
