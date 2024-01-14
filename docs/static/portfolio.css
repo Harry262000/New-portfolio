@@ -186,7 +186,7 @@
              background-position: center;
              width: auto;
              background-color: black;
-             height: 600px;
+             height: 800px;
              padding: 20px;
          }
          
@@ -272,6 +272,7 @@
              background-color: rgba(0, 0, 0, 0.5);
              text-align: center;
              transition: all 0.2s ease-in;
+             width: 306px;
          }
          
          .overlay-slide h2 {
@@ -292,6 +293,7 @@
              width: auto;
              background-size: cover;
              background-position: center;
+             height: 800px;
          }
          
          .portfolio-section:before {
@@ -414,9 +416,9 @@
          }
          
          .portfolio-section .btn:hover {
-             background: #79b82d;
+             background: #3a3c38;
              color: #ffffff;
-             border: 1px solid #79b82d;
+             border: 1px solid #5c5f58;
          }
          
          .portfolio-section .btn:before {
@@ -427,7 +429,7 @@
              left: 0;
              right: 0;
              bottom: 0;
-             background: #79b82d;
+             background: #585956;
              -webkit-transform: scaleX(0);
              transform: scaleX(0);
              -webkit-transform-origin: 0 50%;
@@ -438,7 +440,7 @@
              transition-duration: 0.3s;
              -webkit-transition-timing-function: ease-out;
              transition-timing-function: ease-out;
-             border: 2px solid #79b82d;
+             border: 2px solid #585956;
          }
          
          .portfolio-section .btn:hover:before {
