@@ -28,9 +28,20 @@
 .upper-section-index {
     background-size: cover;
     background-position: center;
-    width: auto;
-    background-color: #000;
-    height: 750px;
+    /* background-color: #0000; */
+    /* opacity: 0.75; */
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    isolation: isolate;
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    /* transition: background 0.3s, border-radius 0.3s, opacity 0.3s; */
 }
 
 .title-color {
@@ -79,9 +90,9 @@
 .section-bg {
     background-size: cover;
     background-position: center;
-    width: auto;
     background-color: black;
-    height: 800px;
+    height: 100vh;
+    width: 100%;
 }
 
 .section-header h3 {
@@ -145,9 +156,9 @@
 .about {
     background-size: cover;
     background-position: center;
-    width: auto;
     background-color: black;
-    height: 800px;
+    height: 100vh;
+    width: 100%;
     padding: 20px;
 }
 
@@ -233,10 +244,10 @@
 .portfolio-section {
     background-color: black;
     padding: 20px;
-    width: auto;
+    height: 100vh;
+    width: 100%;
     background-size: cover;
     background-position: center;
-    height: 800px;
 }
 
 .portfolio-section:before {
@@ -320,9 +331,9 @@
 .work {
     background-size: cover;
     background-position: center;
-    width: auto;
     background-color: black;
-    height: 550px;
+    height: 100vh;
+    width: 100%;
     padding: 20px;
 }
 
