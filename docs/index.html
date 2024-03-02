@@ -10,6 +10,7 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"/>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap"/>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source Sans 3:wght@400&display=swap"/>
+      <script src="https://kit.fontawesome.com/4d04055aa9.js" crossorigin="anonymous"></script>
    </head>
    <body>
       <section>
@@ -31,7 +32,7 @@
             <div class="nav__content">
                <ul class="nav__list">
                   <li class="nav__list-item active-nav"><a href="#" class="hover-target">Home</a></li>
-                  <li class="nav__list-item"><a href="#" class="hover-target">Portfolio</a></li>
+                  <li class="nav__list-item"><a href="#portfolio" class="hover-target">Portfolio</a></li>
                   <li class="nav__list-item"><a href="#" class="hover-target">About</a></li>
                   <li class="nav__list-item"><a href="#" class="hover-target">Contact</a></li>
                </ul>
@@ -116,7 +117,7 @@
                 collaborative team effort.
               </div>
               <button class="about-button">
-                <div class="hire-me">Hire Me</div>
+                <div class="hire-me" href="">Hire Me</div>
               </button>
             </div>
           </div>
@@ -126,7 +127,7 @@
       <div class="insight-discovery-frame-inner">
          <div class="border-item"></div>
       </div>
-      <section class="readyto-contribute-parent">
+      <section class="readyto-contribute-parent" id="portfolio">
          <div class="readyto-contribute">
            <div class="group">
              <div class="arhivealtaddlightsvg-harshalho">
@@ -509,23 +510,14 @@
                         <h1 class="will-update-soon">will update soon!!!</h1>
                      </div>
                   </div>
-                  <div class="hire-me-frame">
+                  <div class="hire-me-frame" id="Resume">
                      <h1 class="ready-to-contribute">
                         Ready to contribute, hire me!
                      </h1>
                   </div>
-                  <div class="line-5-stroke-group">
                      <div class="insight-discovery-frame-inner">
                         <div class="border-item"></div>
                      </div>
-                     <div class="group-frame-group-frame-frame">
-                        <div class="all-rights-reserved-container">
-                           <p class="all-rights-reserved">
-                              © 2024 All rights reserved.
-                           </p>
-                        </div>
-                     </div>
-                  </div>
                </div>
                <div class="harshalhondegmailcom-frame-upw">
                   <button class="all-rights-reserved-ready-to-c">
@@ -535,7 +527,7 @@
                            alt=""
                            src="./static/public/arhivealtaddlightsvg.svg"
                            />
-                        <div class="harshalhonde50gmailcom">Get My Resume</div>
+                        <div class="harshalhonde50gmailcom" >Get My Resume</div>
                      </div>
                   </button>
                   <button class="all-rights-reserved-ready-to-c1">
@@ -553,6 +545,87 @@
          </div>
         </div>
       </section>
+      <section id="contact">
+  
+        <h1 class="section-header">Contact</h1>
+        
+        <div class="contact-wrapper">
+        
+        <!-- Left contact page --> 
+          
+          <form id="contact-form" class="form-horizontal" role="form">
+             
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+              </div>
+            </div>
+      
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+              </div>
+            </div>
+      
+            <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+            
+            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+              <div class="alt-send-button">
+                <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+              </div>
+            
+            </button>
+            
+          </form>
+          
+        <!-- Left contact page --> 
+          
+            <div class="direct-contact-container">
+      
+              <ul class="contact-list">
+                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Banglore, IN</span></i></li>
+                
+                <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:9021664306" title="Give me a call">90216643xx</a></span></i></li>
+                
+                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:Harshalhonde50@gmail.com" title="Send me an email">Harshalhonde50@gmail.com</a></span></i></li>
+                
+              </ul>
+      
+              <hr>
+              <ul class="social-media-list">
+                <li>
+                    <a href="https://github.com/Harry262000" class="contact-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/harshal-honde268/" class="contact-icon">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="contact-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="contact-icon">
+                        <i class="fa-brands fa-kaggle"></i>
+                    </a>
+                </li>       
+            </ul>
+            
+              <hr>
+      
+              <div class="copyright">&copy; 2024 ALL OF THE RIGHTS RESERVED</div>
+      
+            </div>
+          </div>
+        </div>
+        
+      </section>  
+        
+        
       <!-- <section id="section03" class="demo">
          <a href="#section"><span></span></a>
          </section> -->
