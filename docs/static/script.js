@@ -66,8 +66,8 @@
 		e.target.elements.name.value = '';
 		e.target.elements.email.value = '';
 		e.target.elements.message.value = '';
-	  });
-	  var swiper = new Swiper('.blog-slider', {
+	});
+	var swiper = new Swiper('.blog-slider', {
 		spaceBetween: 30,
 		effect: 'fade',
 		loop: true,
@@ -79,7 +79,7 @@
 		  el: '.blog-slider__pagination',
 		  clickable: true,
 		}
-	  });
+	});
 	
 
 
