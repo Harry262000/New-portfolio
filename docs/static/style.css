@@ -470,9 +470,9 @@ body::-webkit-scrollbar {
 
 /* ===== SKILLS =====*/
 
-/* .skills{
+.skills{
     margin-top: 5rem;
-} */
+}
 
 .skills__container {
     row-gap: 2rem;
