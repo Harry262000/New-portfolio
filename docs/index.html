@@ -15,7 +15,7 @@
     <!-- =====FAVICON===== -->
     <link href="assets/img/logo/logo.svg" rel="icon" sizes="16x16">
     <title>Harshal Honde Portofolio</title>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script type="text/javascript" src="./static/js/jquery.min.js"></script>
 </head>
 
 <body>
@@ -573,10 +573,74 @@
 
     <!--===== MAIN JS =====-->
     <script type="text/javascript" src="./static/js/script.js"></script>
-    <script type="text/javascript" src="./static/js/style.js"></script>
+    <!-- <script type="text/javascript" src="./static/js/style.js"></script> -->
     <!-- JS Kram -->
    <!-- <script type="text/javascript" src=".//static/js/style.js"></script> -->
    <script type="text/javascript">
+      (function($) {
+         $.fn.hoverIntent = function(f, g) {
+             var cfg = {
+                 sensitivity: 7,
+                 interval: 100,
+                 timeout: 0
+             };
+             cfg = $.extend(cfg, g ? {
+                 over: f,
+                 out: g
+             } : f);
+             var cX, cY, pX, pY;
+             var track = function(ev) {
+                 cX = ev.pageX;
+                 cY = ev.pageY
+             };
+             var compare = function(ev, ob) {
+                 ob.hoverIntent_t = clearTimeout(ob.hoverIntent_t);
+                 if ((Math.abs(pX - cX) + Math.abs(pY - cY)) < cfg.sensitivity) {
+                     $(ob).unbind("mousemove", track);
+                     ob.hoverIntent_s = 1;
+                     return cfg.over.apply(ob, [ev])
+                 } else {
+                     pX = cX;
+                     pY = cY;
+                     ob.hoverIntent_t = setTimeout(function() {
+                         compare(ev, ob)
+                     }, cfg.interval)
+                 }
+             };
+             var delay = function(ev, ob) {
+                 ob.hoverIntent_t = clearTimeout(ob.hoverIntent_t);
+                 ob.hoverIntent_s = 0;
+                 return cfg.out.apply(ob, [ev])
+             };
+             var handleHover = function(e) {
+                 var ev = jQuery.extend({}, e);
+                 var ob = this;
+                 if (ob.hoverIntent_t) {
+                     ob.hoverIntent_t = clearTimeout(ob.hoverIntent_t)
+                 }
+                 if (e.type == "mouseenter") {
+                     pX = ev.pageX;
+                     pY = ev.pageY;
+                     $(ob).bind("mousemove", track);
+                     if (ob.hoverIntent_s != 1) {
+                         ob.hoverIntent_t = setTimeout(function() {
+                             compare(ev, ob)
+                         }, cfg.interval)
+                     }
+                 } else {
+                     $(ob).unbind("mousemove", track);
+                     if (ob.hoverIntent_s == 1) {
+                         ob.hoverIntent_t = setTimeout(function() {
+                             delay(ev, ob)
+                         }, cfg.timeout)
+                     }
+                 }
+             };
+             return this.bind('mouseenter', handleHover).bind('mouseleave', handleHover)
+         }
+     }
+     )(jQuery);
+     
       $(document).ready(function () {
          var speed = 400;
          $('#gpoy').hoverIntent(function () {
