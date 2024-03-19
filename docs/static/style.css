@@ -849,7 +849,7 @@ body::-webkit-scrollbar {
 	line-height: 26px;
 	text-align: center;
 	background: #fff;
-	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e6e6e6), color-stop(1, #fff));
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #000000), color-stop(1, #000000));
 	background-image: -moz-linear-gradient(center bottom, #e6e6e6 0, #fff 100%)
 }
 
@@ -927,7 +927,7 @@ body::-webkit-scrollbar {
 
 #infografik .leftside table td.aktivtd {
 	font-weight: 700;
-	color: #3e3d3b
+	color: #e3e3e3
 }
 
 #infografik .rightside {
@@ -1147,7 +1147,7 @@ body::-webkit-scrollbar {
 	line-height: 26px;
 	text-align: center;
 	background: #fff;
-	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e6e6e6), color-stop(1, #fff));
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #000000), color-stop(1, #000000));
 	background-image: -moz-linear-gradient(center bottom, #e6e6e6 0, #fff 100%)
 }
 
@@ -1251,13 +1251,9 @@ body::-webkit-scrollbar {
 .footer__container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        row-gap: 2rem;
+    row-gap: 2rem;
 
 }
-
-
-
-
 
 .footer__title {
     font-size: 20px;
